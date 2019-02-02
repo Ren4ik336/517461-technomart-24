@@ -58,11 +58,59 @@
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">Фильтр:</h2>
+        <form class="product-filter" action="#">
+          <fieldset class="price">
+            <legend>Цена:</legend>
+            <div class="price-range">
+              <div class="scale-control">
+                <div class="scale"></div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="range-control">
+                <label class="min-price">
+                  от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до
+                    <input type="text" name="max-price" value="15000">
+                  </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="manufacturer">
+            <legend>Производители:</legend>
+            <label class="manufacturer-label">
+              <input type="checkbox" checked> Bosch
+            </label>
+            <label class="manufacturer-label">
+              <input type="checkbox"> Интерскол
+            </label>
+            <label class="manufacturer-label">
+              <input type="checkbox" checked> Makita
+            </label>
+            <label class="manufacturer-label">
+              <input type="checkbox"> Dewalt
+            </label>
+            <label class="manufacturer-label">
+              <input type="checkbox"> Hitachi
+            </label>
+          </fieldset>
+          <fieldset class="power">
+            <label name="power">
+              <input type="radio" name="power" checked> Аккумуляторные
+            </label>
+            <label name="power">
+              <input type="radio" name="power"> Сетевые
+            </label>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="sorting">
-        <h2 class="visually-hidden">Сортирвка товаров</h2>
+        <h2 class="title-filter">Сортирвка</h2>
         <ul class="sorting-filter">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -263,9 +311,9 @@
           <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
         </div>
         <ul class="social-menu">
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <div class="additional-info">
           <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
@@ -273,5 +321,22 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-write-us">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form action="#" method="POST">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" name="email" id="email">
+          <label for="letter">Текст письма:</label>
+          <textarea name="letter" id="letter" cols="30" rows="10">В свободной форме</textarea>
+          <button type="submit">Отправить</button>
+        </form>
+        <span class="modal-close">Закрыть</span>
+      </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <span class="modal-close">Закрыть</span>
+      </section>
   </body>
 </html>

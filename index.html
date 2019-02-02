@@ -61,8 +61,8 @@
           </li>
           <li>
             <div class="offer-slider">
-              <input id="toggle-1" type="radio" name="radio" checked="">
-              <input id="toggle-2" type="radio" name="radio">
+              <input id="toggle-1" type="radio" name="radio" checked tabindex="0">
+              <input id="toggle-2" type="radio" name="radio" tabindex="0">
               <input id="toggle-left" type="radio" name="radio">
               <input id="toggle-right" type="radio" name="radio">
               <div class="controls">
@@ -180,7 +180,7 @@
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="slider-service">
-					<input id="toggle-btn-1" name="rad" type="radio" checked="">
+					<input id="toggle-btn-1" name="rad" type="radio" checked>
 					<input id="toggle-btn-2" name="rad" type="radio">
 					<input id="toggle-btn-3" name="rad" type="radio">
 					<div class="controls-slider">
@@ -258,9 +258,9 @@
           <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
         </div>
         <ul class="social-menu">
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <div class="additional-info">
           <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
@@ -268,5 +268,22 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form action="#" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" name="email" id="email">
+        <label for="letter">Текст письма:</label>
+        <textarea name="letter" id="letter" cols="30" rows="10">В свободной форме</textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <span class="modal-close">Закрыть</span>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">Закрыть</span>
+    </section>
   </body>
 </html>
