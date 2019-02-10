@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "ptsans";
+  font-family: "PT Sans_Regular";
   src: url("../fonts/ptsans.woff2") format("woff2"),
        url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "ptsansbold";
+  font-family: "PT Sans_Bold";
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
        url("../fonts/ptsansbold.woff") format("woff");
   font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "cuprumbold";
+  font-family: "Cuprum-Bold";
   src: url("../fonts/cuprumbold.woff2") format("woff2"),
        url("../fonts/cuprumbold.woff") format("woff");
   font-weight: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "cuprumbolditalic";
+  font-family: "Cuprum-Bolditalic";
   src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
        url("../fonts/cuprumbolditalic.woff") format("woff");
   font-weight: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: "cuprumitalic";
+  font-family: "Cuprum-italic";
   src: url("../fonts/cuprumitalic.woff2") format("woff2"),
        url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "cuprumregular";
+  font-family: "Cuprum-Regular";
   src: url("../fonts/cuprum.woff2") format("woff2"),
        url("../fonts/cuprum.woff") format("woff");
   font-weight: normal;
@@ -49,7 +49,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "cuprumregular", Arial, sans-serif;
+  font-family: "Cuprum-Regular", Arial, sans-serif;
   font-weight: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -108,12 +108,14 @@ a {
   margin: 0;
 }
 
-.logo img {
-  /* padding: 0;
-  margin: 0 0 -5px 0;
-  width: 220px;
-  height: 47px;
-  display: block; */
+.logotype {
+  background-color: #ee3643;
+  padding: 12px 55px;
+  box-shadow: 0 5px 0 0 rgba(181, 41, 51, 1);
+}
+
+.logotype-footer {
+  padding: 22px 55px;
 }
 
 .page-search {
@@ -241,7 +243,7 @@ a {
   padding-left: 50px;
   margin: 0;
   width: 200px;
-  font-family: "cuprumitalic", "Arial", sans-serif;
+  font-family: "Cuprum-Italic", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
@@ -439,7 +441,7 @@ a {
 
 .product-filter legend {
   font-size: 17px;
-  font-family: "ptsans", "Arial", sans-serif;
+  font-family: "Pt Sans_Regular", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 30px;
@@ -448,7 +450,7 @@ a {
 
 .product-filter label {
   font-size: 15px;
-  font-family: "ptsans", "Arial", sans-serif;
+  font-family: "Pt Sans_Regular", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 20px;
 }
@@ -458,7 +460,7 @@ a {
   background-color: transparent;
   color: #000000;
   font-size: 13px;
-  font-family: "ptsans", "Arial", sans-serif;
+  font-family: "Pt Sans_Regular", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 18px;
 }
@@ -468,7 +470,7 @@ a {
   margin: 0;
   color: #000000;
   font-size: 13px;
-  font-family: "ptsans", "Arial", sans-serif;
+  font-family: "Pt Sans_Regular", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 18px;
 }
@@ -484,18 +486,18 @@ a {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  font-family: "ptsans", "Arial", sans-serif;
+  font-family: "Pt Sans_Regular", "Arial", sans-serif;
   font-weight: bold;
   line-height: 20px;
 }
 
 .catalog-item {
-  font-family: "ptsansbold", "Arial", sans-serif;
+  font-family: "Pt Sans_Bold", "Arial", sans-serif;
   font-weight: bold;
 }
 
 .item-title {
-  font-family: "ptsansbold", "Arial", sans-serif;
+  font-family: "Pt Sans_Bold", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 18px;
@@ -522,7 +524,7 @@ a {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "cuprumregular", "Arial", sans-serif;
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
@@ -540,7 +542,7 @@ a {
   margin: 0;
   padding: 0;
   line-height: 18px;
-  font-family:  "ptsans", "Arial", sans-serif;
+  font-family:  "Pt Sans_Regular", "Arial", sans-serif;
 }
 
 .about-perforators p {
@@ -551,7 +553,7 @@ a {
 .about-perforators strong {
   font-size: 30px;
   line-height: 30px;
-  font-family: "cuprumregular", "Arial", sans-serif;
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
