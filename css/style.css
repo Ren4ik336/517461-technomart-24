@@ -445,16 +445,16 @@ a {
 
 .catalog-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .catalog-item {
   margin-bottom: 20px;
-  width: 218px;
+  margin-right: 20px;
+  /* width: 218px; */
   min-height: 316px;
   border: 1px solid #eaeaea;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -463,14 +463,25 @@ a {
   font-weight: bold;
 }
 
+.catalog-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
 .catalog-list-popular .catalog-item {
-  margin: 0;
+  margin: 0 20px 0 0;
   padding: 0;
+}
+
+.catalog-list-popular .catalog-item:nth-child(4n+4) {
+  margin-right: 0;
 }
 
 .catalog-list h3 {
   padding: 0;
-  margin: 0 20px 12px 20px;
+  margin: auto;
+  width: 178px;
+  text-align: center;
+  /* margin: 0 20px 12px 20px; */
   font-size: 18px;
   font-family: "Pt Sans_Bold", "Arial", sans-serif;
   font-weight: bold;
@@ -966,12 +977,17 @@ a {
   background-color: #f2f6f8;
 }
 
-.about-perforators p {
+.title-perforators {
   padding: 65px 0 35px 0;
   margin: 0;
 }
 
-.about-perforators strong {
+.perforator-defention {
+  font-family:  "Pt Sans_Regular", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.title-perforators strong {
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum-Regular", "Arial", sans-serif;
