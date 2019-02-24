@@ -16,8 +16,8 @@
             </svg>
           </a>
           <form action="#" method="get" class="page-search">
-            <input type="search" name="search" placeholder="Поиск:">
-            <button type="submit" aria-label="Поиск">
+            <input class="search-field" type="search" name="search" placeholder="Поиск:">
+            <button class="search-button" type="submit" aria-label="Поиск">
               <svg class="search-icon" x="0px" y="0px" width="17px"
      height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" fill="#6a7180">
                 <g>
@@ -27,7 +27,7 @@
             </button>
           </form>
           <ul class="page-order-info">
-            <li>
+            <li class="page-order-item">
               <a href="#" class="order-bookmark">
                 <svg class="bookmark-icon" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve"  fill="#6a7180">
                   <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765 C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
@@ -35,7 +35,7 @@
                 Закладки: <span class="bookmark-number">0</span>
               </a>
             </li>
-            <li>
+            <li class="page-order-item">
               <a href="#" class="order-cart order-cart-active">
                 <svg class="cart-icon" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve" fill="#6a7180">
                   <g>
@@ -47,7 +47,7 @@
                 Корзина: <span class="cart-number">10</span>
               </a>
             </li>
-            <li><a href="#" class="order-page">Оформить заказ</a></li>
+            <li class="page-order-item"><a href="#" class="order-page">Оформить заказ</a></li>
           </ul>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="wrapper">
             <a class="tel-number tel-number-header" href="tel:+78125550555">+7 (812)-555-05-55</a>
             <address class="company-address company-address-header">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </address>
           </div>
           <div class="user-info">
@@ -83,13 +83,13 @@
           </div>
           <nav class="page-navigation">
             <ul class="site-navigation">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="index.html">Главная</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="#">Компания</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="#">Новости</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="#">Спецпредложения</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -170,16 +170,16 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button btn-catalog" type="submit">Показать</button>
+            <button class="btn-catalog" type="submit">Показать</button>
           </form>
         </section>
         <div class="right-column">
           <section class="sorting">
             <h2 class="title-filter">Сортировка:</h2>
             <ul class="sorting-filter">
-              <li class="sorting-filter-item"><a class="active" href="#">По цене</a></li>
-              <li class="sorting-filter-item"><a href="#">По типу</a></li>
-              <li class="sorting-filter-item"><a href="#">По функционалу</a></li>
+              <li class="sorting-filter-item"><a class="sorting-filter-link active" href="#">По цене</a></li>
+              <li class="sorting-filter-item"><a class="sorting-filter-link" href="#">По типу</a></li>
+              <li class="sorting-filter-item"><a class="sorting-filter-link" href="#">По функционалу</a></li>
               <li class="sorting-filter-item">
                 <a class="up" href="#">
                   <svg class="up-button active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
@@ -302,7 +302,7 @@
                   <a href="#" class="button button-price">15500 Р.</a>
                 </p>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <div class="actions">
                   <a class="button button-buy" href="#">
                       <svg class="cart-icon" x="0px" y="0px"
@@ -328,7 +328,7 @@
                   <a href="#" class="button button-price">25500 Р.</a>
                 </p>
               </li>
-              <li class="catalog-item new">
+              <li class="catalog-item">
                 <div class="actions">
                   <a class="button button-buy" href="#">
                       <svg class="cart-icon" x="0px" y="0px"
@@ -354,7 +354,7 @@
                   <a href="#" class="button button-price">12500 Р.</a>
                 </p>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <div class="actions">
                   <a class="button button-buy" href="#">
                       <svg class="cart-icon" x="0px" y="0px"
@@ -406,7 +406,7 @@
                   <a href="#" class="button button-price">25500 Р.</a>
                 </p>
               </li>
-              <li class="catalog-item new">
+              <li class="catalog-item">
                 <div class="actions">
                   <a class="button button-buy" href="#">
                       <svg class="cart-icon" x="0px" y="0px"
@@ -434,10 +434,10 @@
               </li>
             </ul>
             <ul class="pagination">
-              <li class="pagination-item-current"><a class="pagination-link-current">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">следующая</a></li>
+              <li class="pagination-item pagination-item-current"><a class="pagination-link pagination-link-current">1</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+              <li class="pagination-item pagination-item-next"><a class="pagination-link pagination-link-next" href="#">следующая</a></li>
             </ul>
           </section>
         </div>
@@ -458,12 +458,12 @@
                 <path class="center" fill="#FFF" fill-rule="evenodd" d="M211.839,4069.06h4.8v18.9h2.7v-18.9h4.8v-2.1h-12.3v2.1Zm17.4,9h6.6v-2.1h-6.6v-6.9h7.5v-2.1h-10.2v21h10.2v-2.1h-7.5v-7.8Zm15.6-2.7-3.3-8.4h-2.7l4.05,10.2-4.5,10.8h2.7l3.75-9,3.75,9h2.7l-4.5-10.8,4.05-10.2h-2.7Zm18-8.4v9.3h-6.3v-9.3h-2.7v21h2.7v-9.6h6.3v9.6h2.7v-21h-2.7Zm10.034,0.21a4.713,4.713,0,0,0-2.025,1.74,9.19,9.19,0,0,0-1.275,3.31,31.718,31.718,0,0,0,0,10.47,9.247,9.247,0,0,0,1.275,3.32,4.713,4.713,0,0,0,2.025,1.74,7.482,7.482,0,0,0,5.43,0,4.713,4.713,0,0,0,2.025-1.74,9.247,9.247,0,0,0,1.275-3.32,31.718,31.718,0,0,0,0-10.47,9.19,9.19,0,0,0-1.275-3.31,4.713,4.713,0,0,0-2.025-1.74A7.482,7.482,0,0,0,272.873,4067.17Zm1.305,18.9a3.182,3.182,0,0,1-1.2-1.41,10.479,10.479,0,0,1-.825-2.76,31.449,31.449,0,0,1,0-8.88,10.479,10.479,0,0,1,.825-2.76,3.182,3.182,0,0,1,1.2-1.41,2.744,2.744,0,0,1,2.82,0,3.182,3.182,0,0,1,1.2,1.41,10.479,10.479,0,0,1,.825,2.76,31.449,31.449,0,0,1,0,8.88,10.479,10.479,0,0,1-.825,2.76,3.182,3.182,0,0,1-1.2,1.41A2.744,2.744,0,0,1,274.178,4086.07Zm21.81-.81,4.35-12.9h0.15l0.9,15.6h2.7l-1.2-21h-3.3l-4.89,14.4h-0.12l-4.89-14.4h-3.3l-1.2,21h2.7l0.9-15.6h0.15l4.35,12.9h2.7Zm20.4-2.7,1.35,5.4h2.7l-5.1-21h-3.9l-5.1,21h2.7l1.35-5.4h6Zm-0.45-2.1h-5.1l2.49-10.5h0.12Zm9.9-.75v-11.1h2.1a5.38,5.38,0,0,1,1.755.25,2.559,2.559,0,0,1,1.215.89,4.221,4.221,0,0,1,.7,1.71,16.312,16.312,0,0,1,0,5.4,4.221,4.221,0,0,1-.7,1.71,2.539,2.539,0,0,1-1.215.88,5.365,5.365,0,0,1-1.755.26h-2.1Zm0,1.8a14.372,14.372,0,0,0,1.44.21,15.316,15.316,0,0,0,1.56.09,7.644,7.644,0,0,0,2.535-.38,3.859,3.859,0,0,0,1.77-1.26,5.877,5.877,0,0,0,1.05-2.35,16.349,16.349,0,0,0,.345-3.66,14.992,14.992,0,0,0-.36-3.57,5.334,5.334,0,0,0-1.14-2.31,4.334,4.334,0,0,0-2.04-1.25,10.854,10.854,0,0,0-3.06-.37,21.7,21.7,0,0,0-2.5.13,14.165,14.165,0,0,0-2.3.47v20.7h2.7v-6.45Zm10.2-12.45h4.8v18.9h2.7v-18.9h4.8v-2.1h-12.3v2.1Z" transform="translate(-211.844 -4066.66)"/>
               </svg>
             </a>
-            <ul class="site-navigation site-navigation-footer">
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+            <ul class="site-navigation footer-navigation">
+              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Компания</a></li>
+              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Новости</a></li>
+              <li class="footer-navigation-item"><a class="footer-navigation-link" href="catalog.html">Каталог</a></li>
+              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Доставка</a></li>
+              <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -471,31 +471,31 @@
           <div class="container container-middle">
             <div>
               <address class="company-address company-address-footer">
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p class="address-text-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </address>
               <a class="tel-number tel-number-footer" href="tel:+78125550555">+7 (812)-555-05-55</a>
             </div>
-            <ul class="offer-navigation">
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструменты</a></li>
-              <li><a href="#">Спецпредложения</a></li>
+            <ul class="offer-footer-navigation">
+              <li class="offer-navigation-item"><a class="offer-navigation-link" href="#">Материалы</a></li>
+              <li class="offer-navigation-item"><a class="offer-navigation-link" href="#">Техника</a></li>
+              <li class="offer-navigation-item"><a class="offer-navigation-link" href="#">Инструменты</a></li>
+              <li class="offer-navigation-item"><a class="offer-navigation-link" href="#">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
         <div class="bottom-line">
           <div class="container container-bottom">
             <div class="copyright">
-              <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+              <p class="copyright-text">© 2010–2019 Компания «Техномарт» Все права защищены</p>
             </div>
             <ul class="social-menu">
-              <li><a class="vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-              <li><a class="facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-              <li><a class="instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-menu-link vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li><a class="social-menu-link facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social-menu-link instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
             </ul>
             <div class="additional-info">
-              <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-              <p>Разработано - <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+              <p class="additional-text">Обратная связь: <a class="additional-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+              <p class="additional-text">Разработано - <a class="additional-link" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
             </div>
           </div>
         </div>
