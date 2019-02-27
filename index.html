@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.normalize.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <title>Интернет-магазин "Техномарт"</title>
   </head>
   <body>
@@ -110,12 +110,12 @@
               <input id="toggle-1" type="radio" name="radio" checked>
               <input id="toggle-2" type="radio" name="radio">
               <div class="controls">
-                <label class="toggle-1" for="toggle-1"></label>
-                <label class="toggle-2" for="toggle-2"></label>
-              </div>
-              <div class="controls-2">
                 <button class="toggle-left"></button>
                 <button class="toggle-right"></button>
+              </div>
+              <div class="controls-2">
+                <label class="toggle-1" for="toggle-1"></label>
+                <label class="toggle-2" for="toggle-2"></label>
               </div>
               <div class="slider-container">
                 <div class="sld slide-1">
@@ -124,8 +124,8 @@
                   <a class="button button-slider" href="catalog.html">Открыть каталог</a>
                 </div>
                 <div class="sld slide-2">
-                  <h3 class="sld-title">Дрели</h3>
-                  <p class="sld-content">Соседям на радость!</p>
+                  <h3 class="sld-title">Перфораторы</h3>
+                  <p class="sld-content">Настоящие мужские игрушки!</p>
                   <a class="button button-slider" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
@@ -318,7 +318,9 @@
         <section class="contacts-company">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис</p>
-          <iframe class="contacts-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A54c4ef4cabbba4874fa0b384e45a563eb392e436385b34593a7b28b9a74bf771&amp;source=constructor" width="300" height="160" frameborder="0"></iframe>
+          <a class="contacts-map" href="map.html">
+            <img src="img/map.jpg" alt="Расположение компании Техномарт на карте" width="300" height="158">
+          </a>
           <button class="button button-write-us" type="submit" src="form.html">Заблудились? Напишите нам!</button>
         </section>
       </div>
@@ -379,11 +381,11 @@
         <div class="field-wrapper">
           <div class="field name-field">
              <label class="field-title name-title" for="name">Ваше имя:</label>
-            <input class="field-input name-input" type="text" name="name" id="name" value="Имя Фамилия">
+            <input class="field-input name-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
           </div>
           <div class="field email-field">
             <label class="field-title email-title" for="email">Ваш e-mail:</label>
-            <input class="field-input email-input" type="text" name="email" id="email" value="email@example.com">
+            <input class="field-input email-input" type="text" name="email" id="email" placeholder="email@example.com">
           </div>
         </div>
         <div class="field message-field">
@@ -398,7 +400,9 @@
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A54c4ef4cabbba4874fa0b384e45a563eb392e436385b34593a7b28b9a74bf771&amp;source=constructor" width="940" height="446"></iframe>
         <div class="modal-close"><span class="visually-hidden">Закрыть</span></div>
     </section>
+    <script src="js/min.script.js"></script>
   </body>
 </html>
