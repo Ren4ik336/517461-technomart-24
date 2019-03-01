@@ -1299,11 +1299,14 @@ display: block
   margin: 0 0 25px 0;
   padding: 0;
   font-family: "PT Sans_Regular", "Arial", sans-serif;
+  font-weight: normal;
 }
 
 .paragraph-2 {
   margin: 0 0 20px 0;
   width: 400px;
+  font-family: "PT Sans_Regular", "Arial", sans-serif;
+  font-weight: normal;
 }
 
 .partner-list {
