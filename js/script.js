@@ -74,10 +74,11 @@ mapClose.addEventListener("click", function(evt) {
 });
 
 window.addEventListener("keydown", function(evt) {
-  evt.preventDefault();
   if(evt.keyCode === 27) {
+    evt.preventDefault();
     if(mapPopup.classList.contains("modal-show")) {
       mapPopup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 });
