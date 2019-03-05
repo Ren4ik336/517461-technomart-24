@@ -53,6 +53,9 @@ body {
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
+  /* background: url("../img/bg1.jpg") no-repeat center top; */
+  background: url("../img/bg2.jpg") no-repeat center top;
+  opacity: 0.7;
 }
 
 a {
@@ -630,6 +633,7 @@ a {
   width: 620px;
   min-height: 266px;
   position: relative;
+  background-color: #8f711f;
 }
 
 .offer-slider input {
@@ -700,6 +704,7 @@ a {
 .toggle-1,
 .toggle-2 {
   display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -729,6 +734,7 @@ a {
 #toggle-1:checked ~ .controls-2 > .toggle-1::before,
 #toggle-2:checked ~ .controls-2 > .toggle-2::before {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .sld-title {
@@ -1386,7 +1392,7 @@ display: block
 }
 
 .contacts-map {
-  margin: 6px 0 38px 0;
+  margin: 6px 0 32px 0;
 }
 
 .button-write-us {
@@ -1504,7 +1510,7 @@ display: block
 }
 
 .bottom-line {
-  padding-top: 37px;
+  padding-top: 39px;
   background-color: #293449;
 }
 
@@ -2091,10 +2097,6 @@ display: block
   background-color: #ffffff;
 }
 
-.catalog-inner-list {
-  margin-bottom: 32px;
-}
-
 .right-column {
   width: 700px;
 }
@@ -2183,6 +2185,10 @@ display: block
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.catalog-inner-list {
+  margin-bottom: 32px;
 }
 
 .pagination {
