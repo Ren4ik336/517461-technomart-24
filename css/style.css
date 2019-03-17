@@ -1,58 +1,59 @@
 @font-face {
-  font-family: "PT Sans_Regular";
+  font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"),
        url("../fonts/ptsans.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans_Bold";
+  font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
        url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Cuprum-Bold";
+  font-family: "Cuprum";
   src: url("../fonts/cuprumbold.woff2") format("woff2"),
        url("../fonts/cuprumbold.woff") format("woff");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Cuprum-Bolditalic";
+  font-family: "Cuprum";
   src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
        url("../fonts/cuprumbolditalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 700;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: "Cuprum-italic";
+  font-family: "Cuprum";
   src: url("../fonts/cuprumitalic.woff2") format("woff2"),
        url("../fonts/cuprumitalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   src: url("../fonts/cuprum.woff2") format("woff2"),
        url("../fonts/cuprum.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum-Regular", "Arial", sans-serif;
+  min-width: 960px;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 a {
@@ -123,7 +124,8 @@ a {
           box-shadow: 0 5px 0 0 rgba(181, 41, 51, 1);
 }
 
-.logotype:hover {
+.logo:hover .logotype,
+.logo:focus .logotype {
   background-color: #ca2c37;
   -webkit-box-shadow: 0 5px 0 0 rgba(154, 33, 42, 1);
           box-shadow: 0 5px 0 0 rgba(154, 33, 42, 1);
@@ -152,11 +154,13 @@ a {
           flex-direction: row-reverse;
 }
 
-.page-search:hover {
+.page-search:hover,
+.page-search:focus {
   background-color: #212a3a;
 }
 
-.page-search:hover > .search-button {
+.page-search:hover > .search-button,
+.page-search:focus > .search-button {
   fill: #ffffff;
 }
 
@@ -247,7 +251,9 @@ a {
 }
 
 .order-bookmark:hover,
-.order-cart:hover {
+.order-cart:hover,
+.order-cart:focus,
+.order-bookmark:focus {
   background-color: #212a3a;
 }
 
@@ -261,7 +267,8 @@ a {
   opacity: 0.5;
 }
 
-.order-page:hover {
+.order-page:hover,
+.order-page:focus {
   background-color: #5fbb2d;
 }
 
@@ -297,7 +304,9 @@ a {
 }
 
 .order-bookmark:hover .bookmark-icon,
-.order-cart:hover .cart-icon {
+.order-cart:hover .cart-icon,
+.order-bookmark:focus .bookmark-icon,
+.order-cart:focus .cart-icon {
   fill: #ffffff;
 }
 
@@ -327,12 +336,12 @@ a {
 }
 
 .site-title {
-  padding: 3px 54px 0 53px;
+  padding: 3px 50px 0 53px;
   margin: 0;
-  width: 192px;
-  font-family: "Cuprum-Italic", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  width: 199px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: #ff3333;
@@ -432,11 +441,14 @@ a {
 }
 
 .login-link:hover,
-.registration-link:hover {
+.registration-link:hover,
+.login-link:focus,
+.registration-link:focus {
   color: #ee3643;
 }
 
-.login-link:hover .login-icon {
+.login-link:hover .login-icon,
+.login-link:focus .login-icon {
   fill: #32425c;
 }
 
@@ -510,7 +522,8 @@ a {
   background-color: #32425c;
 }
 
-.site-navigation-link:hover {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
   background-color: #293449;
 }
 
@@ -559,8 +572,8 @@ a {
   padding: 0;
   margin: 20px 0 13px 0;
   color: #ffffff;
-  font-family: "Cuprum-Bold", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -581,7 +594,8 @@ a {
   border-radius: 3px;
 }
 
-.offer-link:hover {
+.offer-link:hover,
+.offer-link:focus {
   background-color: rgba(0, 0, 0, 0.2)
 }
 
@@ -737,8 +751,9 @@ a {
 .sld-title {
   margin: 0;
   padding: 23px 0 2px 25px;
-  font-family: "Cuprum-Bold", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -749,8 +764,9 @@ a {
   margin: 0 0 120px 25px;
   padding: 0;
   color: #ffffff;
-  font-family: "Cuprum-Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
@@ -767,7 +783,8 @@ a {
   position: relative;
 }
 
-.button-slider:hover {
+.button-slider:hover,
+.button-slider:focus {
   background-color: #ca2c37;
 }
 
@@ -785,10 +802,14 @@ a {
   background: url("../img/slide-2.jpg") no-repeat center center;
 }
 
-#toggle-1:checked ~ .slider-container > .slide-1,
-#toggle-2:checked ~ .slider-container > .slide-2 {
-display: block
+.show {
+  display: block;
 }
+
+/* #toggle-1:checked ~ .slider-container > .slide-1,
+#toggle-2:checked ~ .slider-container > .slide-2 {
+display: block;
+} */
 
 .vertical {
   -webkit-box-orient: vertical;
@@ -834,7 +855,8 @@ display: block
   text-align: center;
 }
 
-.button-all:hover {
+.button-all:hover,
+.button-all:focus {
   background-color: #ca2c37;
 }
 
@@ -872,9 +894,11 @@ display: block
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: "Pt Sans_Bold", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   position: relative;
+  cursor: pointer;
 }
 
 .catalog-item:nth-child(3n+3) {
@@ -896,8 +920,9 @@ display: block
   max-width: 178px;
   text-align: center;
   font-size: 18px;
-  font-family: "Pt Sans_Bold", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   line-height: 20px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -975,6 +1000,8 @@ display: block
   content: "";
   border: 19px solid transparent;
   border-left: 19px solid #ee3643;
+  -webkit-box-shadow: -1px 0 0 0 #ee3643;
+          box-shadow: -1px 0 0 0 #ee3643;
   position: absolute;
   top: 0;
   right: -38px;
@@ -988,8 +1015,9 @@ display: block
   padding: 9px 0;
   height: 17px;
   font-size: 14px;
-  font-family: "Cuprum-Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -1008,11 +1036,13 @@ display: block
   left: 12px;
 }
 
-.button-buy:hover .cart-icon {
+.button-buy:hover .cart-icon,
+.button-buy:focus .cart-icon {
   fill: rgba(255, 255, 255, 1);
 }
 
-.button-buy:hover {
+.button-buy:hover,
+.button-buy:focus {
   background-color: #5fbb2d;
 }
 
@@ -1031,7 +1061,8 @@ display: block
           box-shadow: 0 0 0 3px rgba(99, 166, 62, 1)
 }
 
-.button-bookmark-item:hover {
+.button-bookmark-item:hover,
+.button-bookmark-item:focus {
   -webkit-box-shadow: 0 0 0 3px rgba(50, 66, 92, 1);
           box-shadow: 0 0 0 3px rgba(50, 66, 92, 1)
 }
@@ -1040,7 +1071,8 @@ display: block
   opacity: 0.3;
 }
 
-.catalog-item:hover .actions {
+.catalog-item:hover .actions,
+.catalog-item:focus .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,6 +1126,7 @@ display: block
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1144,7 +1177,9 @@ display: block
   margin: 0 0 67px 0;
   padding: 0;
   width: 400px;
-  font-family: "PT Sans_Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1189,10 +1224,11 @@ display: block
 .toggle-btn {
   padding: 15px 0 15px 23px;
   background-color: #32425c;
-  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   border-bottom: 1px solid #293449;
   border-top: 1px solid #405069;
-  font-weight: normal;
+  font-weight: 700;
+  font-style: normal;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
@@ -1214,7 +1250,8 @@ display: block
   border-bottom: none;
 }
 
-.toggle-btn:hover {
+.toggle-btn:hover,
+.toggle-btn:focus {
   color: #ffffff;
   background-color: #293449;
   border-bottom: 1px solid #293449;
@@ -1247,7 +1284,9 @@ display: block
   margin: 0;
   padding: 0;
   width: 300px;
-  font-family: "PT Sans_Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1301,15 +1340,17 @@ display: block
   width: 550px;
   margin: 0 0 25px 0;
   padding: 0;
-  font-family: "PT Sans_Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .paragraph-2 {
   margin: 0 0 20px 0;
   width: 400px;
-  font-family: "PT Sans_Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .partner-list {
@@ -1351,7 +1392,8 @@ display: block
   line-height: 18px;
 }
 
-.button-about-company:hover {
+.button-about-company:hover,
+.button-about-company:focus {
   background-color: #ca2c37;
 }
 
@@ -1385,7 +1427,9 @@ display: block
   width: 220px;
   margin: 0 0 25px 0;
   padding: 0;
-  font-family: "PT Sans_Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .contacts-map {
@@ -1393,10 +1437,12 @@ display: block
 }
 
 .button-write-us {
-  height: 38px;
+  text-align: center;
+  padding: 10px 7px;
 }
 
-.button-write-us:hover {
+.button-write-us:hover,
+.button-write-us:focus {
   background-color: #ca2c37;
 }
 
@@ -1411,6 +1457,7 @@ display: block
 }
 
 .page-footer-logo {
+  display: block;
   margin-right: 100px;
 }
 
@@ -1455,12 +1502,14 @@ display: block
   padding: 19px 0 18px 0;
 }
 
-.footer-navigation-link:hover {
+.footer-navigation-link:hover,
+.footer-navigation-link:focus {
   background-color: unset;
   text-decoration: underline;
 }
 
 .footer-navigation-link:active {
+  color: rgba(255, 255, 255, 0.5);
   background-color: unset;
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -1477,11 +1526,13 @@ display: block
   padding: 0;
   margin: 0;
   margin-bottom: 72px;
-  width: 540px;
+  max-width: 540px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1501,9 +1552,16 @@ display: block
   color: #ffd180;
 }
 
-.offer-navigation-link:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #ffd180;
+.offer-navigation-link:hover,
+.offer-navigation-link:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ffd180;
+          text-decoration-color: #ffd180;
+}
+
+.offer-navigation-link:active {
+  text-decoration: underline;
+  color:rgba(255, 209, 128, 0.5);
 }
 
 .bottom-line {
@@ -1529,7 +1587,8 @@ display: block
   list-style: none;
 }
 
-.social-menu-link:hover {
+.social-menu-link:hover,
+.social-menu-link:focus {
   background-color: #ee3643;
 }
 
@@ -1597,7 +1656,8 @@ display: block
   color: #ffd180;
 }
 
-.additional-link:hover {
+.additional-link:hover,
+.additional-link:focus {
   border-bottom: 1px solid #ffd180;
   color: #ffd180;
 }
@@ -1622,7 +1682,7 @@ display: block
 }
 
 .page-header-inner .site-title {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .page-header-inner .wrapper {
@@ -1682,7 +1742,8 @@ display: block
   display: flex;
 }
 
-.user-logout:hover > .logout-icon {
+.user-logout:hover > .logout-icon,
+.user-logout:focus > .logout-icon {
   fill: #32425c;
 }
 
@@ -1690,7 +1751,8 @@ display: block
   fill: rgba(50, 66, 92, 0.3);
 }
 
-.user-name:hover > .user-icon{
+.user-name:hover > .user-icon,
+.user-name:focus > .user-icon {
   fill: #32425c;
 }
 
@@ -1758,7 +1820,8 @@ display: block
   text-decoration: underline;
 }
 
-.user-menu-link:hover {
+.user-menu-link:hover,
+.user-menu-link:focus {
   color: #ee3643;
 }
 
@@ -1785,10 +1848,11 @@ display: block
   position: relative;
   margin-right: 24px;
   padding-right: 18px;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -1846,8 +1910,9 @@ display: block
   color: #000000;
   background-color: #f7f3ec;
   font-size: 13px;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   line-height: 18px;
 }
@@ -1882,8 +1947,9 @@ display: block
   display: block;
   margin-bottom: 13px;
   font-size: 17px;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   line-height: 30px;
   color: #000000;
@@ -1895,7 +1961,9 @@ display: block
 
 .product-filter label {
   font-size: 15px;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   line-height: 20px;
 }
@@ -2008,7 +2076,9 @@ display: block
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2036,7 +2106,8 @@ display: block
   cursor: pointer;
 }
 
-.manufacturer-label:hover::before {
+.manufacturer-label:hover::before,
+.manufacturer-label:focus::before {
   opacity: 0.4;
 }
 
@@ -2072,7 +2143,8 @@ display: block
   cursor: pointer;
 }
 
-.power-label:hover::before {
+.power-label:hover::before,
+.power-label:focus::before {
   opacity: 0.4;
 }
 
@@ -2087,7 +2159,9 @@ display: block
   border-radius: 2px;
   color: #000000;
   font-size: 13px;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   line-height: 18px;
   cursor: pointer;
@@ -2116,8 +2190,9 @@ display: block
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -2127,7 +2202,8 @@ display: block
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-filter-link:hover {
+.sorting-filter-link:hover,
+.sorting-filter-link:focus {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -2152,7 +2228,9 @@ display: block
 }
 
 .up-button:hover,
-.down-button:hover {
+.down-button:hover,
+.up-button:focus,
+.down-button:focus {
   fill: #000000;
 }
 
@@ -2171,8 +2249,9 @@ display: block
   margin: 0;
   color: #000000;
   font-size: 13px;
-  font-family: "Pt Sans_Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   line-height: 18px;
 }
@@ -2208,7 +2287,8 @@ display: block
   display: flex;
 }
 
-.pagination-item:hover {
+.pagination-item:hover,
+.pagination-item:focus {
   border: 1px solid #bdc6ca;
 }
 
@@ -2227,7 +2307,9 @@ display: block
   margin: auto;
   padding: 9px 14px;
   line-height: 18px;
-  font-family:  "Pt Sans_Regular", "Arial", sans-serif;
+  font-family:  "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   color: #000000;
   cursor: pointer;
@@ -2253,21 +2335,18 @@ display: block
 .perforator-defention {
   margin: 0;
   padding: 0 0 68px 0;
-  font-family:  "Pt Sans_Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family:  "Pt Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .title-perforators strong {
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum-Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
-}
-
-.modal-write-us,
-.modal-map {
-  display: none;
 }
 
 .modal {
@@ -2287,6 +2366,94 @@ display: block
   height: 423px;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
+}
+
+.modal-cart-add {
+  width: 620px;
+  height: 278px;
+  background-color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 8px solid #ee3643;
+}
+
+.modal-title {
+  margin: 50px 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-title::before {
+  width: 66px;
+  height: 66px;
+  margin-right: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  background: url("../img/form-1.svg") no-repeat center center;
+}
+
+.bottom-select {
+  width: 100%;
+  padding: 38px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1f1f1;
+}
+
+.button-order,
+.button-back {
+  margin-right: 20px;
+  padding: 9px 9px;
+  width: 220px;
+  text-align: center;
+}
+
+.button-back {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: #ca2c37;
+}
+
+.button-order:active {
+  background-color: #ba2732;
+}
+
+.button-back:hover,
+.button-back:focus {
+  color: #ee3643;
+}
+
+.button-back:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-write-us,
+.modal-map,
+.modal-cart-add {
+  display: none;
+  z-index: 300;
 }
 
 .write-form {
@@ -2324,8 +2491,9 @@ display: block
 
 .field-title {
   margin-bottom: 13px;
-  font-family: "Cuprum-Bold", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
   line-height: 18px;
 }
@@ -2336,8 +2504,9 @@ display: block
   padding-right: 15px;
   border: 2px solid #dee3e4;
   color: #a9a9a9;
-  font-family: "PT Sans-Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .field-input:focus {
@@ -2351,8 +2520,9 @@ display: block
   border: 2px solid #dee3e4;
   color: #a9a9a9;
   resize: none;
-  font-family: "PT Sans-Regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .message-input:focus {
@@ -2385,7 +2555,17 @@ display: block
 
 .button-submit {
   width: 100%;
-  height: 40px;;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #ca2c37;
+}
+
+.button-submit:active {
+  background-color: #ba2732;
 }
 
 .map {
