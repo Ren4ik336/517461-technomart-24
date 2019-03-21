@@ -3,7 +3,7 @@ var popup = document.querySelector(".modal-write-us");
 var close = document.querySelector(".modal-close");
 var login = document.querySelector("[name=name]");
 var form = document.querySelector(".write-form");
-var password = document.querySelector("[name=password]");
+var email = document.querySelector("[name=email]");
 var isStorageSupport = true;
 var storage = "";
 
@@ -48,16 +48,14 @@ link.addEventListener("click", function (evt)
 
   if(storage) {
     login.value = storage;
-    password.focus();
+    email.focus();
   } else {
     login.focus();
   }
-
-  login.focus();
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!login.value || !password.value) {
+  if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
